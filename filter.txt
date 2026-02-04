@@ -2,7 +2,7 @@
 ! Description: Dania's Blocklist. This list focuses on mainly Bunkrr's and SC related websites' annoyances, but also includes some other NSFW stuff.
 ! Expires: 2 days
 ! Homepage: https://zdania4.github.io/blocklist
-! Version: 2026Feb04-1
+! Version: 2026Feb04-2
 
 ! ## ALLOWLIST ##
 ! # Allow for login-, thumbnail- plus upload scripts to work on Bunkrr
@@ -4023,9 +4023,10 @@ redgifs.com##.adSearchLink
 redgifs.com##.OnlyFansCreatorsSidebar
 redgifs.com##.liveAdButton:upward(1)
 ||api.redgifs.com/v2/*/camera?$xhr,domain=www.redgifs.com
-redgifs.com##div[class*="Camera_"]:upward(.FeedModule)
+!redgifs.com##div[class*="Camera_"]:upward(.FeedModule)
 ||media.icfcdn.com/*/thumbnail.jpg$image,domain=redgifs.com
-redgifs.com##button[class*="joinBtn"]:upward(.FeedModule)
+!redgifs.com##button[class*="joinBtn"]:upward(.FeedModule)
+redgifs.com##.StreamateCameraDispatcher
 
 ! Redtube
 redtube.*###paid_tabs_list
